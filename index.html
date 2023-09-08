@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Job Application Form</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,300&family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <section class="container">
+        <header>
+            <h1>Job Application</h1>
+        </header>
+        <section>
+            <h2>Fill the form below</h2>
+            <p>Administrative Application for Lyons School</p>
+            <p>Applicant are considered without regard to race,color, sex or national origin</p>
+            <form action="form-processor.html" method="get">
+                <label for=" Full name">Full name <span class="required">*</span></label>
+                <input type="text" id="Full name" name=" Full name" required autofocus placeholder="Example: David Williams" pattern="[a-zA-z]+\s+[a-zA-Z]+">
+
+                <label for="email">Email <span class="required" pattern>*</span></label>
+                <input type="email" id="Email" name="email" required placeholder="myname@example.com" pattern="[a-zA-Z0-9_.]+@[a-zA-Z0-9]+\.[a-zA-Z]{2,6}">
+
+                <label for="Phone number">Phone number <span class="required" pattern>*</span></label>
+                <input type="Phone Number" id="Phone Number" name="Phone Number"  placeholder="2348100000000">
+
+                <label for="Resume Upload">Resume Upload <span class="required" pattern>*</span></label>
+                <input type="Resume Upload" id="Resume Upload" name="Resume Upload">
+
+
+            
+                <label for="Preferred Job Position">Preferred Job Position<span class="required" pattern>*</span></label>
+
+                <select name="Job Position" id="Job position">
+                    <option value="Administrative">Administrative</option>
+                    <option value="Sales">Sales</option>
+                    <option value="Software Engineer">Software Engineer</option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Actuary">Actuary</option>
+                </select>
+
+            
+
+                <label for="Educational Background">Educational Background<span class="required" pattern>*</span></label>
+                <textarea name="Educational Background" id= Educational Background" cols="30" rows="5" placeholder="not more than 200 words"></textarea>
+
+               
+                <div class="ActionI">
+                   <label for="Skills">Skills <span class="required" pattern>*</span></label>
+                    <input type="checkbox" id="Skills" name="Skills">
+                    <label for="Skills"> Communication</label>
+                    <input type="checkbox" id="Skills" name="Skills" >
+                    <label for="skills">Writing</label>
+                    <input type="checkbox" id="Skills" name="Skills">
+                    <label for="Skills">Team Work</label>     
+                </div>
+
+                 
+                <label for="Years of Experience">Years Of Experience <span class="required" pattern>*</span>
+                    <div class="Action2">  
+                        <input type="radio" id="Years of Experience" name="Years of Experience">
+                        <label for="Years of Experience">0-5</label>
+                        <input type="radio" id="Years of Experience" name="Years of Experience">
+                        <label for="Years of Experience">6-9</label>  
+                        <input type="radio" id="Years of Experience" name="Years of Experience">
+                        <label for="age3">10-12</label>
+                    </div>
+                </label>
+
+                <label for="Are you willing to relocate">Are you willing to relocate <span class="required" pattern>*</span>
+                    <div class="Action4">
+                        <input type="radio" id="Are you willing to relocate" name="Are you willing to relocate">
+                        <label for="Are you willing to relocate">YES</label>
+                        <input type="radio" id="Are you willing to relocate" name="Are you willing to relocate">
+                        <label for="Are you willing to relocate">NO</label> 
+
+                    </div>
+                         
+                </label>
+                
+
+                <input type="submit" value="Submit Application" name="submit">
+            
+            </form>     
+        </section>
+    </section>
+</body>
+</html>
